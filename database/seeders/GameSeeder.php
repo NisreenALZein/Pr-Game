@@ -20,7 +20,7 @@ class GameSeeder extends Seeder
             'title' =>'Dauntless' ,
             'size'=>2,
             'description'=> 'A free-to-play, co-op action RPG with gameplay similar to Monster Hunter.',
-            'image' => json_encode(['url' => 'games/images/W96hI28dfFfA0e05t83riYCF4RCr50-metaNjAzODQyNjkwMTM4NDYzNzYwNi5qcGc=-.jpg']),
+            'image' => ['games/images/W96hI28dfFfA0e05t83riYCF4RCr50-metaNjAzODQyNjkwMTM4NDYzNzYwNi5qcGc=-.jpg'],
             'url_video'=>'https://www.freetogame.com/open/dauntless',
             'category_id'=>1, 
     
@@ -42,7 +42,7 @@ class GameSeeder extends Seeder
             'title' =>'World of Tanks' ,
             'size'=>40,
             'description'=> 'If you like blowing up tanks, with a quick and intense',
-            'image' => json_encode(['url' => 'games/images/hnsSqKQosaBBcaBz7T3Gu8JiebXdBj-metaNjAyNzE1MzA4ODk3NDAwNzY2NC5qcGc=-.jpg']), 
+            'image' => ['games/images/hnsSqKQosaBBcaBz7T3Gu8JiebXdBj-metaNjAyNzE1MzA4ODk3NDAwNzY2NC5qcGc=-.jpg'], 
             'url_video'=>'https://www.freetogame.com/open/world-of-tanks',
             'category_id'=>2,
          
@@ -59,12 +59,14 @@ class GameSeeder extends Seeder
             'Genre'=>'Shooter',
             'ReleasedOn'=>'2011-04-12',
                         ]);
+               
+
           Game::create([
             'uuid'=>Str::uuid(),
             'title' =>'Warframe' ,
             'size'=>25,
             'description'=> 'A cooperative free-to-play third person online action ',
-            'image' => json_encode(['url' => 'games/images/51AHpa6u38xOzMuUnK8TGTKvVoW6g0-metaNjAxODQyMjAwODg3MTc1ODg1MS5qcGc=-.jpg']),           
+            'image' => ['games/images/51AHpa6u38xOzMuUnK8TGTKvVoW6g0-metaNjAxODQyMjAwODg3MTc1ODg1MS5qcGc=-.jpg'],           
             'url_video'=>'https://www.freetogame.com/open/warframe',
             'category_id'=>2,
           
@@ -86,7 +88,7 @@ class GameSeeder extends Seeder
              'title' =>'Crossout' ,
              'size'=>25,
              'description'=> 'A post-apocalyptic MMO vehicle combat game!',
-             'image' => json_encode(['url' => 'games/images/FukjCyVxQQ6f3cFvAvPkwHwbdmnyb3-metaNjA0NzM2ODE3NzE4NjM1MjYxMi5qcGc=-.jpg']),           
+             'image' =>['games/images/FukjCyVxQQ6f3cFvAvPkwHwbdmnyb3-metaNjA0NzM2ODE3NzE4NjM1MjYxMi5qcGc=-.jpg'],           
              'url_video'=>'https://www.freetogame.com/open/crossout',
              'category_id'=>2,
          
@@ -108,7 +110,7 @@ class GameSeeder extends Seeder
              'title' =>'Blade and Soul' ,
              'size'=>21,
              'description'=> 'A free-to-play martial arts MMORPG that tasks play...',
-             'image' => json_encode(['url' => 'games/images/AMPRovKDQsQkb13cs9NHeMRTXDZKLr-metaNTg1ODQ1ODIwMjQ5NTEwMjAwOS5qcGc=-.jpg']),           
+             'image' => ['games/images/AMPRovKDQsQkb13cs9NHeMRTXDZKLr-metaNTg1ODQ1ODIwMjQ5NTEwMjAwOS5qcGc=-.jpg'],           
              'url_video'=>'https://www.freetogame.com/open/blade-and-soul',
              'category_id'=>3,
       
@@ -130,7 +132,7 @@ class GameSeeder extends Seeder
              'title' =>'Armored Warfare' ,
              'size'=>30,
              'description'=> 'A modern team-based MMO tank game from Obsidian Entertainment. ',
-             'image' => json_encode(['url' => 'games/images/Vr6Q6NrgCMVipTDosMdAr5KLPwzn6l-metaNTgzMTA4MjgxOTY4NDc3MzY1NC5qcGc=-.jpg']),           
+             'image' => [ 'games/images/Vr6Q6NrgCMVipTDosMdAr5KLPwzn6l-metaNTgzMTA4MjgxOTY4NDc3MzY1NC5qcGc=-.jpg'],           
              'url_video'=>'https://www.freetogame.com/open/armored-warfare',
              'category_id'=>2,
           
@@ -153,7 +155,7 @@ class GameSeeder extends Seeder
           'title' =>'Trove',
           'size'=>17,
           'description'=> 'A free to play Sandbox massively multiplayer online role-',
-          'image' => json_encode(['url' => 'games/images/goXMjH5Lhxo9Y7IiuzQx9zLAdReySa-metaNjAwMDMxMDkzNDk0MzQxMTUyMC5qcGc=-.jpg']),           
+          'image' => ['games/images/goXMjH5Lhxo9Y7IiuzQx9zLAdReySa-metaNjAwMDMxMDkzNDk0MzQxMTUyMC5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/trove',
           'category_id'=>3,
 
@@ -176,7 +178,7 @@ class GameSeeder extends Seeder
           'title' =>'World of Warships' ,
           'size'=>40,
           'description'=> 'A 3D free to play naval action-themed MMO from the creators of World of Tanks! ',
-          'image' => json_encode(['url' => 'games/images/W3JdybSlpYtUTfsUm0mNM7fRJ7vgOw-metaNjAyNTAyMzM0MzU0MDk0MDE3My5qcGc=-.jpg']),           
+          'image' => ['games/images/W3JdybSlpYtUTfsUm0mNM7fRJ7vgOw-metaNjAyNTAyMzM0MzU0MDk0MDE3My5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/archeage',
           'category_id'=>4,
           
@@ -197,7 +199,7 @@ class GameSeeder extends Seeder
             'title' =>'ArcheAge' ,
             'size'=>80,
             'description'=> 'A free-to-play, hybrid fantasy/sandbox MMORPG brought to you by Trion Worlds',
-             'image' => json_encode(['url' => 'games/images/1uT53i2SvmMLIwFpBZ5lDorLPv762a-metaNTkyNTcxNDcxMDI5MDg2OTQyMC5qcGc=-.jpg']),           
+             'image' =>['games/images/1uT53i2SvmMLIwFpBZ5lDorLPv762a-metaNTkyNTcxNDcxMDI5MDg2OTQyMC5qcGc=-.jpg'],           
              'url_video'=>'https://www.freetogame.com/open/archeage',
             'category_id'=>3,
             'price'=>4.00,
@@ -219,7 +221,7 @@ class GameSeeder extends Seeder
                  'title' =>'Neverwinter' ,
                  'size'=>27,
                  'description'=> 'A free-to-play 3D action MMORPG based on the acclaimed Dungeons & Dragons fantasy roleplaying game. ',
-                 'image' => json_encode(['url' => 'games/images/ZHCm8Cr6BXx8v4TQxXNc1gnaRJkvm6-metaNTk2NjQxNzcyODgwODAwNTAxNy5qcGc=-.jpg']),           
+                 'image' => ['games/images/ZHCm8Cr6BXx8v4TQxXNc1gnaRJkvm6-metaNTk2NjQxNzcyODgwODAwNTAxNy5qcGc=-.jpg'],           
                  'url_video'=>'https://www.freetogame.com/open/neverwinter',
                  'category_id'=>3,
                 
@@ -241,7 +243,7 @@ class GameSeeder extends Seeder
                 'title' =>'War Thunder' ,
                 'size'=>22,
                 'description'=> 'A MMO shooter that puts you in command of hundreds of the finest combat vehicles of World War II',
-                'image' => json_encode(['url' => 'games/images/4wUCvzioHACY4FidCiSSEv27WpjdXW-metaNTgzMTE3OTI3NjA2MDMwNzMxMS5qcGc=-.jpg']),           
+                'image' => ['games/images/4wUCvzioHACY4FidCiSSEv27WpjdXW-metaNTgzMTE3OTI3NjA2MDMwNzMxMS5qcGc=-.jpg'],           
                 'url_video'=>'https://www.freetogame.com/open/war-thunder',
                 'category_id'=>5,
              
@@ -263,7 +265,7 @@ class GameSeeder extends Seeder
                'title' =>'Guild Wars 2' ,
                'size'=>40,
                'description'=> 'A free-to-play MMORPG, the follow-up to ArenaNets popular Guild Wars.',
-               'image' => json_encode(['url' => 'games/images/D5aPm0hVXcTu0kjJ3aGoBPz2IVP2iC-metaNTkxODkwMTQ2NjIzMDI3MTA4OC5qcGc=-.jpg']),           
+               'image' => ['games/images/D5aPm0hVXcTu0kjJ3aGoBPz2IVP2iC-metaNTkxODkwMTQ2NjIzMDI3MTA4OC5qcGc=-.jpg'],           
                'url_video'=>'https://www.freetogame.com/open/guild-wars-2',
                'category_id'=>3,
            
@@ -286,7 +288,7 @@ class GameSeeder extends Seeder
              'title' =>'Star Trek Online' ,
              'size'=>19,
              'description'=> 'A free-to-play, 3D, Sci-Fi MMORPG based on the popular Star Trek series',
-             'image' => json_encode(['url' => 'games/images/dXhTvC2MZlfqVl0ak6xDMdWuKfan0h-metaNTk0Mzc1MzkyOTQxNjM1NDk2NC5qcGc=-.jpg']),           
+             'image' => ['games/images/dXhTvC2MZlfqVl0ak6xDMdWuKfan0h-metaNTk0Mzc1MzkyOTQxNjM1NDk2NC5qcGc=-.jpg'],           
              'url_video'=>'https://www.freetogame.com/open/star-trek-online',
              'category_id'=>3,
        
@@ -308,7 +310,7 @@ class GameSeeder extends Seeder
               'title' =>'Crossfire' ,
               'size'=>13,
               'description'=> 'A first person tactical shooter with a huge selection of game modes!',
-              'image' => json_encode(['url' => 'games/images/2N5hlYE3WwaVCpyQdh0hipM5oFVSGe-metaNTgzMTE1Nzc3MTE1OTA1NjE4OC5qcGc=-.jpg']),           
+              'image' =>[ 'games/images/2N5hlYE3WwaVCpyQdh0hipM5oFVSGe-metaNTgzMTE1Nzc3MTE1OTA1NjE4OC5qcGc=-.jpg'],           
               'url_video'=>'https://www.freetogame.com/open/crossfire',
               'category_id'=>3,
              
@@ -330,7 +332,7 @@ class GameSeeder extends Seeder
               'title' =>'Roblox' ,
               'size'=>200,
               'description'=> 'A free to play sandbox MMO with lots of creation options',
-              'image' => json_encode(['url' => 'games/images/qz3q76OR3LnQ2WiyVjJpOOUfBA5d9V-metaNjA0NzU2NjcxNjM0NDU3NzQ4MS5qcGc=-.jpg']),           
+              'image' =>['games/images/qz3q76OR3LnQ2WiyVjJpOOUfBA5d9V-metaNjA0NzU2NjcxNjM0NDU3NzQ4MS5qcGc=-.jpg'],           
               'url_video'=>'https://www.freetogame.com/open/roblox',
               'category_id'=>6,
           
@@ -353,7 +355,7 @@ class GameSeeder extends Seeder
              'title' =>'Entropia Universe' ,
              'size'=>50,
              'description'=> 'A 3D MMO Multi Virtual World Real Cash Economy Experience with RPG elements.',
-             'image' => json_encode(['url' => 'games/images/krxUMhnBQFItzBsdXIHrQh79CkO9j4-metaNTk0Mzc4OTYyMDU5NDU4NDU3OC5qcGc=-.jpg']),           
+             'image' => ['games/images/krxUMhnBQFItzBsdXIHrQh79CkO9j4-metaNTk0Mzc4OTYyMDU5NDU4NDU3OC5qcGc=-.jpg'],           
              'url_video'=>'https://www.freetogame.com/open/entropia-universe',
              'category_id'=>3,
           
@@ -375,7 +377,7 @@ class GameSeeder extends Seeder
             'title' =>'Second Life' ,
             'size'=>5,
             'description'=> 'A free to play 3D online virtual world with a huge reputation! ',
-            'image' => json_encode(['url' => 'games/images/yzVsawNyPHWs1vmyfDX24mlT2JvXuE-metaNTgzMTIzMTAzMDQxNjIyNDAzMi5qcGc=-.jpg']),           
+            'image' =>['games/images/yzVsawNyPHWs1vmyfDX24mlT2JvXuE-metaNTgzMTIzMTAzMDQxNjIyNDAzMi5qcGc=-.jpg'],           
             'url_video'=>'https://www.freetogame.com/open/second-life',
             'category_id'=>7,
          
@@ -398,7 +400,7 @@ class GameSeeder extends Seeder
           'title' =>'Minion Masters' ,
           'size'=>2,
           'description'=> 'A free-to-play strategic minion brawler from Danish developer Betadwarf.',
-          'image' => json_encode(['url' => 'games/images/u8XeRiugZ9kJmMhzwH89TBz2Tk2WKk-metaNTgzMTUzMTg3OTk5MDQwNjk4Ni5qcGc=-.jpg']),           
+          'image' => ['games/images/u8XeRiugZ9kJmMhzwH89TBz2Tk2WKk-metaNTgzMTUzMTg3OTk5MDQwNjk4Ni5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/minion-masters',
           'category_id'=>8,
       
@@ -420,7 +422,7 @@ class GameSeeder extends Seeder
           'title' =>'Splitgate: Arena Warfare' ,
           'size'=>19,
           'description'=> 'A free-to-play multiplayer shooter developed and published by 1047 games ',
-          'image' => json_encode(['url' => 'games/images/hjhpaYzbSqAzH8XXGGWH36DslE4NZB-metaNTg3ODg2MDY5MzAxNTQ3MzM2NS5qcGc=-.jpg']),           
+          'image' =>['games/images/hjhpaYzbSqAzH8XXGGWH36DslE4NZB-metaNTg3ODg2MDY5MzAxNTQ3MzM2NS5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/splitgate-arena-warfare',
           'category_id'=>5,
     
@@ -442,7 +444,7 @@ class GameSeeder extends Seeder
           'title' =>'Destiny 2' ,
           'size'=>80,
           'description'=>'A free-to-play multiplayer Sci-Fi MMOFPS from Bungie' ,
-          'image' => json_encode(['url' => 'games/images/vDe7CUu2iBemO2gRPAFqE3w2E35aa9-metaNTg4NTI1NTY5MzE2MDc4NzE5My5qcGc=-.jpg']),           
+          'image' => ['games/images/vDe7CUu2iBemO2gRPAFqE3w2E35aa9-metaNTg4NTI1NTY5MzE2MDc4NzE5My5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/destiny-2',
           'category_id'=>2,
           'price'=>'30.00',
@@ -464,7 +466,7 @@ class GameSeeder extends Seeder
           'title' =>'Wild Terra Online 	' ,
           'size'=>8,
           'description'=> 'A medieval sandbox MMO designed with core players in mind. ',
-          'image' => json_encode(['url' => 'games/images/091KbFyj5Ls2V68ByHEqD3lkJ8r7Hw-metaNTk2NjUzMTQ3NjcyMTg3MjMzMC5qcGc=-.jpg']),           
+          'image' =>['games/images/091KbFyj5Ls2V68ByHEqD3lkJ8r7Hw-metaNTk2NjUzMTQ3NjcyMTg3MjMzMC5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/wild-terra-online',
           'category_id'=>3,
       
@@ -487,7 +489,7 @@ class GameSeeder extends Seeder
          'title' =>'Apex Legends' ,
          'size'=>24,
          'description'=> 'A free-to-play strategic battle royale game featuring 60-player matches and team-based play.',
-         'image' => json_encode(['url' => 'games/images/EUHgSj4g3aL98BMhXjzKvkTFbxIBwk-metaNjA0NTM5NzQ3MDA5NzI4ODcwNS5qcGc=-.jpg']),           
+         'image' =>['games/images/EUHgSj4g3aL98BMhXjzKvkTFbxIBwk-metaNjA0NTM5NzQ3MDA5NzI4ODcwNS5qcGc=-.jpg'],           
          'url_video'=>'https://www.freetogame.com/open/apex-legends',
          'category_id'=>9,
          
@@ -509,7 +511,7 @@ class GameSeeder extends Seeder
           'title' =>'Counter-Strike: Global Offensive' ,
           'size'=>22,
           'description'=> 'The popular multiplayer shooter from Valve.',
-          'image' => json_encode(['url' => 'games/images/8ctQtcWyefb2vpuyjCLAV7w22Flw15-metaNTgwNDE3ODc1MzcwMDYwNTE1Ny5qcGc=-.jpg']),           
+          'image' =>['games/images/8ctQtcWyefb2vpuyjCLAV7w22Flw15-metaNTgwNDE3ODc1MzcwMDYwNTE1Ny5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/counter-strike-global-offensive',
           'category_id'=>5,
          
@@ -531,7 +533,7 @@ class GameSeeder extends Seeder
           'title' =>'Bless Online' ,
           'size'=>35,
           'description'=> 'A free-to-play fantasy MMORPG featuring field battles, monster taming, and large 100v100 realm vs realm battles.',
-          'image' => json_encode(['url' => 'games/images/I6ihYPLrDHJLEAkIyRunzwcOAiaByZ-metaNjAxMTcyNTMwNDQ1Mzc3MDM0OC5qcGc=-.jpg']),           
+          'image' => ['games/images/I6ihYPLrDHJLEAkIyRunzwcOAiaByZ-metaNjAxMTcyNTMwNDQ1Mzc3MDM0OC5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/bless-online',
           'category_id'=>3,
            
@@ -553,7 +555,7 @@ class GameSeeder extends Seeder
           'title' =>'MapleStory 2' ,
           'size'=>15,
           'description'=> 'Sequel to Nexons successful MMORPG, Maplestory! ',
-          'image' => json_encode(['url' => 'games/images/22bxQCrEXHaemlKFYoTxE6apmvonzc-metaNjAwNjkzMjkyNDExMDMxODQyMy5qcGc=-.jpg']),           
+          'image' => ['games/images/22bxQCrEXHaemlKFYoTxE6apmvonzc-metaNjAwNjkzMjkyNDExMDMxODQyMy5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/maplestory-2',
           'category_id'=>3,
      
@@ -576,7 +578,7 @@ class GameSeeder extends Seeder
           'title' =>'Spacelords' ,
           'size'=>29,
           'description'=> 'A free-to-play 4v1 sci-fi shooter',
-          'image' => json_encode(['url' => 'games/images/FZ6oKRg3lFhD92gpdvOSuUnlqFewoy-metaNTg4NzU3NDg0NjY1MTYwODM0OC5qcGc=-.jpg']),           
+          'image' => ['games/images/FZ6oKRg3lFhD92gpdvOSuUnlqFewoy-metaNTg4NzU3NDg0NjY1MTYwODM0OC5qcGc=-.jpg'],           
           'url_video'=>'"https://www.freetogame.com/open/spacelords',
           'category_id'=>5,
         
@@ -599,7 +601,7 @@ class GameSeeder extends Seeder
           'title' =>'Ring of Elysium' ,
           'size'=>13,
           'description'=> 'A free-to-play battle royale developed and publish...',
-          'image' => json_encode(['url' => 'games/images/3Dti56U2gHPNx8F1yn5jPGDiXnHY5i-metaNTgzMTI4NDA3MzI2MjMyODc2NS5qcGc=-.jpg']),           
+          'image' =>['games/images/3Dti56U2gHPNx8F1yn5jPGDiXnHY5i-metaNTgzMTI4NDA3MzI2MjMyODc2NS5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/ring-of-elysium',
           'category_id'=>9,
        
@@ -621,7 +623,7 @@ class GameSeeder extends Seeder
           'title' =>'Quake Champions' ,
           'size'=>23,
           'description'=> 'Quake Champions is a callback to the early days of the Quake IP, featuring the fast-paced action that made the IP popular over two decades ago.',
-          'image' => json_encode(['url' => 'games/images/F3EvF5xOHJ3Yu0IzwHwqNCxgA0x0Ft-metaNTk0MzY2ODA1MTU0NTI3MTQ2Mi5qcGc=-.jpg']),           
+          'image' => ['games/images/F3EvF5xOHJ3Yu0IzwHwqNCxgA0x0Ft-metaNTk0MzY2ODA1MTU0NTI3MTQ2Mi5qcGc=-.jpg'],           
           'url_video'=>'"https://www.freetogame.com/open/quake-champions',
           'category_id'=>11,   
         
@@ -643,7 +645,7 @@ class GameSeeder extends Seeder
           'title' =>'Cosmos Invictus' ,
           'size'=>17,
           'description'=> 'A strategic collectible card game developed and published by Pegnio Ltd',
-          'image' => json_encode(['url' => 'games/images/B2jcdaSP3R4c9j6nfd76mrkmwrSza8-metaNTc4NDE4NTE2MTI0NjY4MjcyNy5qcGc=-.jpg']),           
+          'image' => ['games/images/B2jcdaSP3R4c9j6nfd76mrkmwrSza8-metaNTc4NDE4NTE2MTI0NjY4MjcyNy5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/cosmos-invictus',
           'category_id'=>9,
      
@@ -665,7 +667,7 @@ class GameSeeder extends Seeder
           'title' =>'Champions Of Titan' ,
           'size'=>4,
           'description'=> 'A free-to-play sci-fi MMORPG from IDC/Games.',
-          'image' => json_encode(['url' => 'games/images/Nr16enpg6WBgoQ8WuNc18f2TsRZwM1-metaNjAyNzA3MTkwOTc5NzE0NjE5Ni5qcGc=-.jpg']),           
+          'image' => ['games/images/Nr16enpg6WBgoQ8WuNc18f2TsRZwM1-metaNjAyNzA3MTkwOTc5NzE0NjE5Ni5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/champions-of-titan',
           'category_id'=>3,
          
@@ -687,7 +689,7 @@ class GameSeeder extends Seeder
           'title' =>'Caller’s Bane' ,
           'size'=>10,
           'description'=> 'The free-to-play reboot of Mojangs card/board game Scrolls.',
-          'image' => json_encode(['url' => 'games/images/limUvzmLajV2Vef7nVQYiqzy6kgC6z-metaNTgwODgyMTIzOTY4NTQyOTE0Ni5qcGc=-.jpg']),           
+          'image' =>['games/images/limUvzmLajV2Vef7nVQYiqzy6kgC6z-metaNTgwODgyMTIzOTY4NTQyOTE0Ni5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/callers-bane',
           'category_id'=>8,
          
@@ -709,7 +711,7 @@ class GameSeeder extends Seeder
           'title' =>'Defiance 2050' ,
           'size'=>17,
           'description'=> 'A re-imagining of Trion Worlds sci-fi shooter Defiance. \r\n',
-          'image' => json_encode(['url' => 'games/images/hswKrdvUlWaP5lCKYEOEuWik3jLSaE-metaNTc5NzYzMzgzNzcyMTgyNDU4MC5qcGc=-.jpg']),           
+          'image' => ['games/images/hswKrdvUlWaP5lCKYEOEuWik3jLSaE-metaNTc5NzYzMzgzNzcyMTgyNDU4MC5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/defiance-2050',
           'category_id'=>2,
       
@@ -731,7 +733,7 @@ class GameSeeder extends Seeder
           'title' =>'Realm Royale Reforged' ,
           'size'=>5,
           'description'=> 'A free-to-play fantasy-themed battle royale game based on Hi-Rez Studios team shooter Paladins. ',
-          'image' => json_encode(['url' => 'games/images/E4qui4lpRpTRPhx0HhGHF5lugAOL6Y-metaNTg2Mjc2Mjg0NjM1MjQxOTY5Mi5qcGc=-.jpg']),           
+          'image' => ['games/images/E4qui4lpRpTRPhx0HhGHF5lugAOL6Y-metaNTg2Mjc2Mjg0NjM1MjQxOTY5Mi5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/realm-royale',
           'category_id'=>9,
          
@@ -753,7 +755,7 @@ class GameSeeder extends Seeder
          'title' =>'Crusaders Of Ligh 	' ,
          'size'=>4,
          'description'=> 'A cross-platform MMORPG available on PC and mobile devices.',
-         'image' => json_encode(['url' => 'games/images/OfIQ1AL0V7aph5F4PJ0u3hP89jaQ3R-metaNTk5NTkyMzc3NjE3NDQwMjQzMC5qcGc=-.jpg']),           
+         'image' => ['games/images/OfIQ1AL0V7aph5F4PJ0u3hP89jaQ3R-metaNTk5NTkyMzc3NjE3NDQwMjQzMC5qcGc=-.jpg'],           
          'url_video'=>'https://www.freetogame.com/open/crusaders-of-light',
          'category_id'=>3,
      
@@ -776,7 +778,7 @@ class GameSeeder extends Seeder
          'title' =>'Darwin Project' ,
          'size'=>6,
          'description'=> 'A free-to-play 10-player battle royale game set just prior to an impeding ice age',
-         'image' => json_encode(['url' => 'games/images/CEeYRLXBDVD4a1G4hZiWzM1Cd7arKg-metaNjA0NzM1NzUzODU1MjM2MDUwNy5qcGc=-.jpg']),           
+         'image' =>['games/images/CEeYRLXBDVD4a1G4hZiWzM1Cd7arKg-metaNjA0NzM1NzUzODU1MjM2MDUwNy5qcGc=-.jpg'],           
          'url_video'=>'https://www.freetogame.com/open/darwin-project',
          'category_id'=>9,
        
@@ -798,7 +800,7 @@ class GameSeeder extends Seeder
          'title' =>'Spellsworn' ,
          'size'=>3,
          'description'=> 'A free-to-play arena battle game developed and published by Frogsong Studios AB.',
-         'image' => json_encode(['url' => 'games/images/lOevXyt8A21i4USk6EaHT1VZMBpc75-metaNTgzMTA0NzM0MzI1NDkwODgxNy5qcGc=-.jpg']),           
+         'image' => ['games/images/lOevXyt8A21i4USk6EaHT1VZMBpc75-metaNTgzMTA0NzM0MzI1NDkwODgxNy5qcGc=-.jpg'],           
          'url_video'=>'https://www.freetogame.com/open/spellsworn',
          'category_id'=>13,
     
@@ -820,7 +822,7 @@ class GameSeeder extends Seeder
          'title' =>'Z1 Battle Royale' ,
          'size'=>20,
          'description'=> 'A highly competitive free-to-play battle royale shooter',
-         'image' => json_encode(['url' => 'games/images/oc9DUG7HuQIOFCe0fUefwPOqkw61yC-metaNjA0NzcyODA3ODI2NTg4ODIyNy5qcGc=-.jpg']),           
+         'image' =>['games/images/oc9DUG7HuQIOFCe0fUefwPOqkw61yC-metaNjA0NzcyODA3ODI2NTg4ODIyNy5qcGc=-.jpg'],           
          'url_video'=>'https://www.freetogame.com/open/z1-battle-royale',
          'category_id'=>9,
      
@@ -842,7 +844,7 @@ class GameSeeder extends Seeder
           'title' =>'Tale Of Toast' ,
           'size'=>4,
           'description'=> 'A free-to-play open world MMO inspired by classic, core MMOs.',
-          'image' => json_encode(['url' => 'games/images/8SqzXNsQmniZDKcTzaJV76Cr9m8po2-metaNTgzMTQ3MDUwNDkwNzc0NzE2OS5qcGc=-.jpg']),           
+          'image' => ['games/images/8SqzXNsQmniZDKcTzaJV76Cr9m8po2-metaNTgzMTQ3MDUwNDkwNzc0NzE2OS5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/tale-of-toast',
           'category_id'=>3,
         
@@ -865,7 +867,7 @@ class GameSeeder extends Seeder
           'title' =>'SoulWorker' ,
           'size'=>4,
           'description'=> 'A free-to-play open world MMO inspired by classic, core MMOs.',
-          'image' => json_encode(['url' => 'games/images/V5ir1crdP8QpKNeFrh9eCrgp8BKx3e-metaNTg1ODU4MzY3NTY2OTY4NzAyNi5qcGc=-.jpg']),           
+          'image' =>[ 'games/images/V5ir1crdP8QpKNeFrh9eCrgp8BKx3e-metaNTg1ODU4MzY3NTY2OTY4NzAyNi5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/tale-of-toast',
           'category_id'=>3,
        
@@ -887,7 +889,7 @@ class GameSeeder extends Seeder
           'title' =>'Bombtag' ,
           'size'=>600,
           'description'=> 'A free-to-play multiplayer Bomberman-inspired game',
-          'image' => json_encode(['url' => 'games/images/4YVpA1O7pXwPmTsMNT52Nwdgs36GqB-metaNjA0NzM0MjI2NTY0ODY1NTc4MS5qcGc=-.jpg']),           
+          'image' =>['games/images/4YVpA1O7pXwPmTsMNT52Nwdgs36GqB-metaNjA0NzM0MjI2NTY0ODY1NTc4MS5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/bombtag',
           'category_id'=>14,
 
@@ -909,7 +911,7 @@ class GameSeeder extends Seeder
           'title' =>'Ironsight' ,
           'size'=>8,
           'description'=> 'A free-to-play futuristic shooter published by Aeria Games',
-          'image' => json_encode(['url' => 'games/images/VDRJiiO3srkboOUFeJlMyjjSPzVRK6-metaNTgzMTU0MDY1NDYwODU5MjYxMS5qcGc=-.jpg']),           
+          'image' => ['games/images/VDRJiiO3srkboOUFeJlMyjjSPzVRK6-metaNTgzMTU0MDY1NDYwODU5MjYxMS5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/ironsight',
           'category_id'=>2,
     
@@ -931,7 +933,7 @@ class GameSeeder extends Seeder
          'title' =>'Dead Maze' ,
          'size'=>250,
          'description'=> 'A free-to-play 2D isometric MMO full of zombies.',
-         'image' => json_encode(['url' => 'games/images/F0bRitP0hBMf6xwFAPdTlbl3zxrxLK-metaNTk1MDgzNTE2MjI1NjM1NDYzMC5qcGc=-.jpg']),           
+         'image' =>['games/images/F0bRitP0hBMf6xwFAPdTlbl3zxrxLK-metaNTk1MDgzNTE2MjI1NjM1NDYzMC5qcGc=-.jpg'],           
          'url_video'=>'https://www.freetogame.com/open/dead-maze',
          'category_id'=>3,
    
@@ -956,7 +958,7 @@ class GameSeeder extends Seeder
           'title' =>'Global Adventures' ,
           'size'=>10,
           'description'=> 'A free-to-play MMORPG developed by PixelSoft and Published by SubaGames.',
-          'image' => json_encode(['url' => 'games/images/6CnoeT8sqct9Bht8djABZGLyHZhpoD-metaNTgzMTI2MjUxMjUyNjUwMzUzOC5qcGc=-.jpg']),           
+          'image' =>['games/images/6CnoeT8sqct9Bht8djABZGLyHZhpoD-metaNTgzMTI2MjUxMjUyNjUwMzUzOC5qcGc=-.jpg'],           
           'url_video'=>'https://www.freetogame.com/open/global-adventures',
           'category_id'=>3,
          
@@ -983,7 +985,7 @@ class GameSeeder extends Seeder
         'title' =>'Closers' ,
         'size'=>5,
         'description'=> 'A free-to-play episodic anime beat-em-up developed \r\nby Naddic Games and published by \r\nEn Masse Entertainment.',
-        'image' => json_encode(['url' => 'games/images/BuYU7P5nCndjEt1ob80Z7gXKjewknj-metaNTk0NDEyNzU4NzI3NjEzOTc1MS5qcGc=-.jpg']),           
+        'image' => ['games/images/BuYU7P5nCndjEt1ob80Z7gXKjewknj-metaNTk0NDEyNzU4NzI3NjEzOTc1MS5qcGc=-.jpg'],           
         'url_video'=>'https://www.freetogame.com/open/closers',
         'category_id'=>3,
       
@@ -1007,7 +1009,7 @@ class GameSeeder extends Seeder
                     'title' =>'Deceit' ,
                     'size'=>10,
                     'description'=> 'A free-to-play multiplayer first-person shooter set \r\nin an asylum!',
-                    'image' => json_encode(['url' => 'games/images/PCnMcNFoFnRGyx1V5BDBQX1ySUtcNM-metaNTk0NDEzNzg2MDgzNzkxMTY5NC5qcGc=-.jpg']),           
+                    'image' => ['games/images/PCnMcNFoFnRGyx1V5BDBQX1ySUtcNM-metaNTk0NDEzNzg2MDgzNzkxMTY5NC5qcGc=-.jpg'],           
                     'url_video'=>'https://www.freetogame.com/open/deceit',
                     'category_id'=>2,
                  
@@ -1031,7 +1033,7 @@ class GameSeeder extends Seeder
     'title' =>'Grimoire: Manastorm' ,
     'size'=>2,
     'description'=> 'A free-to-play multiplayer FPS... with wizards',
-    'image' => json_encode(['url' => 'games/images/zcSd1vNfsdZTWBkCCakQgTOeyOF0t0-metaNTgzMTMyMDc5MDkzNzc0MzEzNi5qcGc=-.jpg']),           
+    'image' =>['games/images/zcSd1vNfsdZTWBkCCakQgTOeyOF0t0-metaNTgzMTMyMDc5MDkzNzc0MzEzNi5qcGc=-.jpg'],           
     'url_video'=>'https://www.freetogame.com/open/grimoire-manastorm',
     'category_id'=>2,
 
@@ -1055,7 +1057,7 @@ class GameSeeder extends Seeder
         'title' =>'Fortnite' ,
         'size'=>18,
         'description'=> 'A free-to-play, standalone mode of Epic Games Fortnite. ',
-        'image' => json_encode(['url' => 'games/images/zQd3sX2bcky1btkmG9mly0u5E5pdiT-metaNTgzMTM3ODIyNzUzNTM5MjQyNS5qcGc=-.jpg']),           
+        'image' => [ 'games/images/zQd3sX2bcky1btkmG9mly0u5E5pdiT-metaNTgzMTM3ODIyNzUzNTM5MjQyNS5qcGc=-.jpg'],           
         'url_video'=>'https://www.freetogame.com/open/fortnite-battle-royale',
         'category_id'=>2,
       
@@ -1079,7 +1081,7 @@ class GameSeeder extends Seeder
     'title' =>'The Ultimatest Battle' ,
     'size'=>300,
     'description'=> 'A free-to-play 2D platform game that pits two teams of players against each other in a variety of modes.',
-    'image' => json_encode(['url' => 'games/images/pdjoAT2VmKQ79zq0CDb2d2qWXeCciW-metaNTk3MzMzMzA4MTQyMTA5ODQyMC5qcGc=-.jpg']),           
+    'image' => ['games/images/pdjoAT2VmKQ79zq0CDb2d2qWXeCciW-metaNTk3MzMzMzA4MTQyMTA5ODQyMC5qcGc=-.jpg'],           
     'url_video'=>'https://www.freetogame.com/open/the-ultimatest-battle',
     'category_id'=>15,
    
@@ -1103,7 +1105,7 @@ class GameSeeder extends Seeder
             'title' =>'Insidia' ,
             'size'=>2,
             'description'=> 'A free-to-play tactical, turn-based dueling game developed and published by Bad Seed',
-            'image' => json_encode(['url' => 'games/images/5kseo3HjXJfZk4QLyDpnuhtIZ745S5-metaNTgyODk5MDgxNDEyOTMzNjA1Mi5qcGc=-.jpg']),           
+            'image' => ['games/images/5kseo3HjXJfZk4QLyDpnuhtIZ745S5-metaNTgyODk5MDgxNDEyOTMzNjA1Mi5qcGc=-.jpg'],           
             'url_video'=>'https://www.freetogame.com/open/insidia',
             'category_id'=>14,
            
@@ -1127,7 +1129,7 @@ class GameSeeder extends Seeder
         'title' =>'Brink' ,
         'size'=>8,
         'description'=> 'A free-to-play first-person-shoot developed by Splash \r\nDamage and published by Bethesda Softworks.',
-        'image' => json_encode(['url' => 'games/images/a6kbWMG4x2NSLqzZ6zMKoayBLpCXH4-metaNTk0Mzk0NTkzNTkyOTMyMjY0Mi5qcGc=-.jpg']),           
+        'image' => [ 'games/images/a6kbWMG4x2NSLqzZ6zMKoayBLpCXH4-metaNTk0Mzk0NTkzNTkyOTMyMjY0Mi5qcGc=-.jpg'],           
         'url_video'=>'https://www.freetogame.com/open/brink',
         'category_id'=>2,
      
@@ -1156,7 +1158,7 @@ class GameSeeder extends Seeder
         'title' =>'Black Squad' ,
         'size'=>7,
         'description'=>'Black Squad',
-        'image'=>json_encode(['url' =>'games/images/1J6llwnrG15G0RtfGJVWEfEZT80Lbb-metaNTc4NjA2OTc4ODYwMTE5OTY3Ny5qcGc=-.jpg']),
+        'image'=>['games/images/1J6llwnrG15G0RtfGJVWEfEZT80Lbb-metaNTc4NjA2OTc4ODYwMTE5OTY3Ny5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/black-squad',
         'category_id'=>16,
         'price'=>29.90,
@@ -1181,7 +1183,7 @@ class GameSeeder extends Seeder
         'title' =>'Kritika: Zero' ,
         'size'=>6,
         'description'=>'A free-to-play hack-and-slash MMORPG with both a single-player adventure combat from Valofe. ',
-        'image'=>json_encode(['url' =>'games/images/hdkocIXor0f62vLYfv2cy0N5wspqlm-metaNTg0NDc1MjUwNjU4NzAzMjQ2Ny5qcGc=-.jpg']),
+        'image'=>['games/images/hdkocIXor0f62vLYfv2cy0N5wspqlm-metaNTg0NDc1MjUwNjU4NzAzMjQ2Ny5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/kritika',
         'category_id'=>3,
     
@@ -1206,7 +1208,7 @@ class GameSeeder extends Seeder
         'title' =>'Argo' ,
         'size'=>20,
         'description'=>'A tactical first-person shooter from the Arma 3 de...',
-        'image'=>json_encode(['url' =>'games/images/goptGdyy3nOrGjgds92t99PRffFfRJ-metaNTg4NTQyNjk4NTA0NjQ4NjMxMS5qcGc=-.jpg']),
+        'image'=>['games/images/goptGdyy3nOrGjgds92t99PRffFfRJ-metaNTg4NTQyNjk4NTA0NjQ4NjMxMS5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/argo',
         'category_id'=>4,
   
@@ -1231,7 +1233,7 @@ class GameSeeder extends Seeder
         'title' =>'Secret World Legends' ,
         'size'=>5,
         'description'=>'A free-to-play reboot of The Secret World.',
-        'image'=>json_encode(['url' =>'games/images/RHeD50Ppo3XgxJBWhLVSCb8lscCgHf-metaNjAyNzI4NTczMDQ0OTAxMDA0My5qcGc=-.jpg ']),
+        'image'=>['games/images/RHeD50Ppo3XgxJBWhLVSCb8lscCgHf-metaNjAyNzI4NTczMDQ0OTAxMDA0My5qcGc=-.jpg '],
         'url_video'=>'https://www.freetogame.com/open/secret-world-legends',
         'category_id'=>17,
        
@@ -1256,7 +1258,7 @@ class GameSeeder extends Seeder
         'title' =>'Pixel Worlds' ,
         'size'=>30,
         'description'=>'A free-to-play, side-scroller MMO sandbox game developed and published by Kukouri Mobile Entertainment.',
-        'image'=>json_encode(['url' =>'games/images/SKUwM9TpeXPvMIntHeIxLiRLyRW1VE-metaNTgzMTUxMTI0MjY3MjU0OTY5Ni5qcGc=-.jpg']),
+        'image'=>['games/images/SKUwM9TpeXPvMIntHeIxLiRLyRW1VE-metaNTgzMTUxMTI0MjY3MjU0OTY5Ni5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/pixel-worlds',
         'category_id'=>6,
      
@@ -1281,7 +1283,7 @@ class GameSeeder extends Seeder
         'title' =>'Gwent: The Witcher Card Game' ,
         'size'=>4.5,
         'description'=>'A free-to-play card game based on CD Projekt Reds popular Witcher franchise.',
-        'image'=>json_encode(['url' =>'games/images/wGFHDvUSGWk9vv9pvuPGJWtj8FAM6o-metaNTc2ODM0Nzk0MTc4OTA4NTMwOS5qcGc=-.jpg']),
+        'image'=>['games/images/wGFHDvUSGWk9vv9pvuPGJWtj8FAM6o-metaNTc2ODM0Nzk0MTc4OTA4NTMwOS5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/gwent',
         'category_id'=>8,
        
@@ -1306,7 +1308,7 @@ class GameSeeder extends Seeder
         'title' =>'Awesomenauts' ,
         'size'=>3.5,
         'description'=>'A 3v3 2D battle arena Developed by Ronimo games',
-        'image'=>json_encode(['url' =>'games/images/xP3lSn9b0qOIaQmtO2zK0ubbzchXKB-metaNjA0NzY0ODgxODkzOTQwNzc0Ni5qcGc=-.jpg']),
+        'image'=>['games/images/xP3lSn9b0qOIaQmtO2zK0ubbzchXKB-metaNjA0NzY0ODgxODkzOTQwNzc0Ni5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/awesomenauts',
         'category_id'=>18,
        
@@ -1331,7 +1333,7 @@ class GameSeeder extends Seeder
         'title' =>'Dreadnought' ,
         'size'=>'11',
         'description'=>'A free-to-play combat flight simulator developed by Yager Development and published by Grey Box.',
-        'image'=>json_encode(['url' =>'games/images/PYKu3kGv0JOBP8Tkf9iZ5bINDsbXdC-metaNTgzMTM4MDQyMjI2MzY4MDg2OS5qcGc=-.jpg']),
+        'image'=>['games/images/PYKu3kGv0JOBP8Tkf9iZ5bINDsbXdC-metaNTgzMTM4MDQyMjI2MzY4MDg2OS5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/dreadnought',
         'category_id'=>2,
       
@@ -1356,7 +1358,7 @@ class GameSeeder extends Seeder
         'title' =>'Cabals: Card Blitz' ,
         'size'=>200,
         'description'=>'A free-to-play game developed by Kyy Games and published by BISBOG SA.',
-        'image'=>json_encode(['url' =>'games/images/cW5vEHSaIrs7f6S4wMHAcoBGRxixI9-metaNTk0ODM5NTE3ODQ1MDU5NDkxOS5qcGc=-.jpg ']),
+        'image'=>['games/images/cW5vEHSaIrs7f6S4wMHAcoBGRxixI9-metaNTk0ODM5NTE3ODQ1MDU5NDkxOS5qcGc=-.jpg '],
         'url_video'=>'https://www.freetogame.com/open/cabals-card-blitz',
         'category_id'=>8,
        
@@ -1381,7 +1383,7 @@ class GameSeeder extends Seeder
         'title' =>'Alien Swarm: Reactive Drop' ,
         'size'=>10,
         'description'=>'A free-to-play top-down tactical co-op expansion on the Alien swarm game and Source SDK',
-        'image'=>json_encode(['url' =>'games/images/QCv64lNK8LKxjFMv6vsB6Ptbw9paYC-metaNTk2NjM4MTM5MzM4NDY4MDkwNS5qcGc=-.jpg']),
+        'image'=>['games/images/QCv64lNK8LKxjFMv6vsB6Ptbw9paYC-metaNTk2NjM4MTM5MzM4NDY4MDkwNS5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/alien-swarm-reactive-drop',
         'category_id'=>2,
     
@@ -1406,7 +1408,7 @@ class GameSeeder extends Seeder
         'title' =>'Catan Universe' ,
         'size'=>1,
         'description'=>'A free-to-play strategy game based on the classic board and card games.',
-        'image'=>json_encode(['url' =>'games/images/7wUzSe8VrBhUquekATNIv2coFt0l5C-metaNTgzMTQyMTgzODYzMzMxNjAxNS5qcGc=-.jpg ']),
+        'image'=>['games/images/7wUzSe8VrBhUquekATNIv2coFt0l5C-metaNTgzMTQyMTgzODYzMzMxNjAxNS5qcGc=-.jpg '],
         'url_video'=>'https://www.freetogame.com/open/catan-universe',
         'category_id'=>8,
    
@@ -1431,7 +1433,7 @@ class GameSeeder extends Seeder
         'title' =>'Krosmaga' ,
         'size'=>3,
         'description'=>'A free-to-play CCG/tower defense hybrid developed \r\nby Ankama Studio and published by \r\nAnkama Games.',
-        'image'=>json_encode(['url' =>'games/images/Ei8Jd4VSD9s0DXoqDEo4fWr66NAr8e-metaNjA0MzAwNDYwMjA4Mjc2NjMxMy5qcGc=-.jpg']),
+        'image'=>['games/images/Ei8Jd4VSD9s0DXoqDEo4fWr66NAr8e-metaNjA0MzAwNDYwMjA4Mjc2NjMxMy5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/krosmaga',
         'category_id'=>12,
    
@@ -1456,7 +1458,7 @@ class GameSeeder extends Seeder
         'title' =>'Revelation Online' ,
         'size'=>5,
         'description'=>'A free-to-play fantasy MMO developed by NetEase and published by My.com.',
-        'image'=>json_encode(['url' =>'games/images/Uq12UwZw6PLgTxy4wYzXpe1EGfz82P-metaNjA0NTUwMzEyNjI5Mjc3MDMyMi5qcGc=-.jpg']),
+        'image'=>['games/images/Uq12UwZw6PLgTxy4wYzXpe1EGfz82P-metaNjA0NTUwMzEyNjI5Mjc3MDMyMi5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/revelation-online',
         'category_id'=>3,
  
@@ -1481,7 +1483,7 @@ class GameSeeder extends Seeder
         'title' =>'Line of Sight' ,
         'size'=>3,
         'description'=>'Free FPS game described as \"Bioshock meets Call of Duty\"!',
-        'image'=>json_encode(['url' =>'games/images/mHddBK29rdwY2sa9byr27T2334MyU5-metaNjAyNzEzNzI1NzcyNDU1NDY5MS5qcGc=-.jpg']),
+        'image'=>['games/images/mHddBK29rdwY2sa9byr27T2334MyU5-metaNjAyNzEzNzI1NzcyNDU1NDY5MS5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/line-of-sight',
         'category_id'=>19,
        
@@ -1506,7 +1508,7 @@ class GameSeeder extends Seeder
         'title' =>'Heavy Metal Machines' ,
         'size'=>3,
         'description'=>'A free-to-play multiplayer vehicular combat game based in a post-apocalyptic world',
-        'image'=>json_encode(['url' =>'games/images/byYo2T3lQGwqCbFuW0myycnTyM2ZOK-metaNTk0NjI0ODg1MDE0ODc5NzU4Ni5qcGc=-.jpg']),
+        'image'=>['games/images/byYo2T3lQGwqCbFuW0myycnTyM2ZOK-metaNTk0NjI0ODg1MDE0ODc5NzU4Ni5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/heavy-metal-machines',
         'category_id'=>13,
      
@@ -1531,7 +1533,7 @@ class GameSeeder extends Seeder
         'title' =>'Infestation: The New Z' ,
         'size'=>10,
         'description'=>'A re-work of the open world zombie shooter game Infestation: Survivor Stories (or as it was formerly known \"The War Z\").',
-        'image'=>json_encode(['url' =>'games/images/CSdnASPVible5VwuWHBj3heFUP5Na0-metaNTg1ODM4MDUzMjMwNjUyMDg5MS5qcGc=-.jpg']),
+        'image'=>['games/images/CSdnASPVible5VwuWHBj3heFUP5Na0-metaNTg1ODM4MDUzMjMwNjUyMDg5MS5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/infestation-new-z',
         'category_id'=>2,
      
@@ -1556,7 +1558,7 @@ class GameSeeder extends Seeder
         'title' =>'MU Legend' ,
         'size'=>25,
         'description'=>'A free-to-play MMORPG developed by Webzen and the followup to MU Online.',
-        'image'=>json_encode(['url' =>'games/images/s89Nr5zUDf0OYZ0p7VaBL0DWr1KUuw-metaNTg4NzYzNjc2NzE5NTExNDc5Ny5qcGc=-.jpg']),
+        'image'=>['games/images/s89Nr5zUDf0OYZ0p7VaBL0DWr1KUuw-metaNTg4NzYzNjc2NzE5NTExNDc5Ny5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/mu-legend',
         'category_id'=>3,
       
@@ -1581,7 +1583,7 @@ class GameSeeder extends Seeder
         'title' =>'Shadowverse' ,
         'size'=>2,
         'description'=>'A free-to-play strategic CCG developed and published by Cygamesm the creators of Rage of Bahamut and Granblu Fantasy.',
-        'image'=>json_encode(['url' =>'games/images/sJOBbEKEcndyV1Q4hiYbldFau9DpQm-metaNTc2NTc2OTMzNzkxMzg0NzI2OC5qcGc=-.jpg']),
+        'image'=>['games/images/sJOBbEKEcndyV1Q4hiYbldFau9DpQm-metaNTc2NTc2OTMzNzkxMzg0NzI2OC5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/shadowverse',
         'category_id'=>20,
      
@@ -1606,7 +1608,7 @@ class GameSeeder extends Seeder
         'title' =>'AdventureQuest 3D' ,
         'size'=>500,
         'description'=>'A free to play cross-platform MMORPG from the creators of the original 2D RPG game.',
-        'image'=>json_encode(['url' =>'games/images/L0V5U6LzMrPnTTvLhTzaDGF00oXHGd-metaNTgzMTM2MTQ5NDM0MjgwNzI5MC5qcGc=-.jpg']),
+        'image'=>['games/images/L0V5U6LzMrPnTTvLhTzaDGF00oXHGd-metaNTgzMTM2MTQ5NDM0MjgwNzI5MC5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/adventurequest-3d',
         'category_id'=>3,
        
@@ -1631,7 +1633,7 @@ class GameSeeder extends Seeder
         'title' =>'Eternal' ,
         'size'=>3,
         'description'=>'A strategy card game designed to take the best elements of Magic the Gathering, Hearthstone, and Hex and combine them all into one game.',
-        'image'=>json_encode(['url' =>'games/images/YHx0Pkq04RTKJrakBlir3C0uekATXz-metaNTgzMTQ3MzYwMTU3OTE2NzUxOC5qcGc=-.jpg']),
+        'image'=>['games/images/YHx0Pkq04RTKJrakBlir3C0uekATXz-metaNTgzMTQ3MzYwMTU3OTE2NzUxOC5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/eternal',
         'category_id'=>3,
       
@@ -1656,7 +1658,7 @@ class GameSeeder extends Seeder
         'title' =>'One Tower' ,
         'size'=>5,
         'description'=>'A unique 1v1 MOBA known as a \"micro-moba\" developed and published by SkyReacher following a successful Kickstarter.',
-        'image'=>json_encode(['url' =>'games/images/J77u0camfPCltcft9bDiKM6YvBlu31-metaNTgzMTU0OTQ0MjExMTY4MDE4NS5qcGc=-.jpg']),
+        'image'=>['games/images/J77u0camfPCltcft9bDiKM6YvBlu31-metaNTgzMTU0OTQ0MjExMTY4MDE4NS5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/one-tower',
         'category_id'=>18,
         'type'=>'freement',
@@ -1680,7 +1682,7 @@ class GameSeeder extends Seeder
         'title' =>'Riding Club Championships' ,
         'size'=>1,
         'description'=>'An online competitive horse riding game inspired by traditional equestrian disciplines.',
-        'image'=>json_encode(['url' =>'games/images/J8C6c3aoaaEZdSnedyKqmSulT71JYu-metaNjA0MzI2MTU3ODU2NjAyMDYxOS5qcGc=-.jpg']),
+        'image'=>['games/images/J8C6c3aoaaEZdSnedyKqmSulT71JYu-metaNjA0MzI2MTU3ODU2NjAyMDYxOS5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/riding-club-championships',
         'category_id'=>21,
     
@@ -1705,7 +1707,7 @@ class GameSeeder extends Seeder
         'title' =>'Battlerite' ,
         'size'=>1.5,
         'description'=>'A free-to-play team arena brawler developed by Stunlock Studios. Players play as one of several available champions on teams in 2v2 or 3v3 matches.',
-        'image'=>json_encode(['url' =>'games/images/pyBnfnklerbAJqS6tKxW2OWdTodtjL-metaNTgzMTU1ODQ3NDQyNzkwMzc5My5qcGc=-.jpg']),
+        'image'=>['games/images/pyBnfnklerbAJqS6tKxW2OWdTodtjL-metaNTgzMTU1ODQ3NDQyNzkwMzc5My5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/battlerite',
         'category_id'=>18,
        
@@ -1730,7 +1732,7 @@ class GameSeeder extends Seeder
         'title' =>'Paladins' ,
         'size'=>10,
         'description'=>' A free-to-play team-based shooter developed and published by Hi-Rez Games, the creators of SMITE.',
-        'image'=>json_encode(['url' =>'games/images/TsMjJ6ev9GyfEJUnGG7xIFdXRmE2y4-metaNTgzMTE3OTIzMzExMDYzNDEyNy5qcGc=-.jpg']),
+        'image'=>['games/images/TsMjJ6ev9GyfEJUnGG7xIFdXRmE2y4-metaNTgzMTE3OTIzMzExMDYzNDEyNy5qcGc=-.jpg'],
         'url_video'=>'https://www.freetogame.com/open/paladins',
         'category_id'=>2,
         'type'=>'freement',

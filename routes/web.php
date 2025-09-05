@@ -32,7 +32,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/all', [App\Http\Controllers\GameController::class, 'index'])->middleware('auth');
 

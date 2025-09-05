@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RecommendationController;
+use App\Http\Controllers\GameSimilarityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,17 +21,19 @@ Route::post('login',[App\Http\Controllers\Api\AuthController::class,'login'])->n
 Route::post('logout',[App\Http\Controllers\Api\AuthController::class,'logout'])->name('logout') ;
 
 
+Route::get('all/game',[App\Http\Controllers\Api\GameController::class,'index']) ;
+
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
 
+
 Route::middleware(['auth:sanctum'])->group(function()
 
     {
 
-Route::get('all/game',[App\Http\Controllers\Api\GameController::class,'index']) ;
 Route::get('latestGames',[App\Http\Controllers\Api\GameController::class,'latestGames']) ;
 Route::post('show',[App\Http\Controllers\Api\GameController::class,'show']) ;
 Route::get('all/category',[App\Http\Controllers\Api\CategoryController::class,'index']) ;
@@ -43,4 +47,10 @@ Route::post('AddOrUpdateComment', [App\Http\Controllers\Api\ReviewingController:
 Route::post('getCommentsByGameName', [App\Http\Controllers\Api\GameController::class, 'getCommentsByGameName']);
 
 
+Route::get('recommend/{user}/{n?}', [RecommendationController::class, 'recommend']);
+Route::get('similar/{game}/{n?}', [GameSimilarityController::class, 'similar']);
+
  }) ;
+
+
+ 

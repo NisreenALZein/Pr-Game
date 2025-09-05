@@ -36,6 +36,16 @@ trait GeneralTrait
         }
     }
 
+    
+    public function unAuthorizeResponse()
+    {
+        return $this->apiResponse(null,0,'Unauthorize', 401);
+    }
+
+    public function notFoundResponse($more)
+    {
+        return $this->apiResponse(null, 1, $more, 404);
+    }
  
 }
 

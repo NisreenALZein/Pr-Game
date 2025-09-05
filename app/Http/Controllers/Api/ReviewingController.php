@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Reviewing;
 use App\Http\Trait\GeneralTrait;
+use Illuminate\Support\Str ;
+use App\Models\Game;
+
+
 
 
 class ReviewingController extends Controller
@@ -14,30 +18,50 @@ class ReviewingController extends Controller
     use GeneralTrait;
     
 public function addOrUpdateComment(Request $request)
-{
-    $request->validate([
-        'comment' => 'required|string|max:255|regex:/[a-z]/',
+{$request->validate([
+    'comment' => 'required|string|max:255', // تمت إزالة regex
+    'title' => 'required|string|exists:games,title'
     ]);
 
-    $userId = Auth::id();
-    $comment = $request->input('comment');
+   $userId = Auth::id();
+ if (!$userId) {
+ return response()->json(['message' => 'Unauthorized'], 401);
+  }
 
-    // Check for the existing comment by the user
-    $reviewing = Reviewing::where('user_id', $userId)->first();
+  $comment = $request->input('comment');
+   $title = $request->input('title');
 
-    if ($reviewing) {
-        // Update the existing comment
-        $reviewing->comment = $comment;
-        $reviewing->save();
-    } else {
-        // Create a new comment
+   $game = Game::where('title', $title)->first();
+
+ if (!$game) {
+ return response()->json(['message' => 'Game not found'], 404);
+  }
+
+$gameId = $game->id;
+
+  $reviewing = Reviewing::where('user_id', $userId)
+                         ->where('game_id', $gameId)
+                         ->first();
+
+ if ($reviewing) {
+    $reviewing->comment = $comment;
+    $reviewing->save();
+   } else {
         Reviewing::create([
-            'user_id' => $userId,
-            'comment' => $comment,
-        ]);
-    }
-        $data = ['comment'=>$comment] ;
-    return $this->apiResponse($data);
+         "uuid"=>Str::uuid(),
+         'user_id' => $userId,
+          'game_id' => $gameId,
+          'comment'=>$comment,
+   ]);
+ }
+
+$data = [
+     'comment' => $comment,
+     'game_title' => $title,
+    
+    ];
+   return $this->apiResponse($data, true, 'Comment added/updated successfully', 200);
+
 }
 
     /**
