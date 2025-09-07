@@ -1,0 +1,24 @@
+{
+    "install-php-extensions": [
+      "bcmath",
+      "ctype",
+      "curl",
+      "dom",
+      "fileinfo",
+      "filter",
+      "gd",
+      "hash",
+      "intl",
+      "mbstring",
+      "openssl",
+      "pcre",
+      "pdo",
+      "pdo_mysql",
+      "pdo_pgsql",
+      "redis",
+      "session",
+      "tokenizer",
+      "xml",
+      "zip"
+    ]
+  }
